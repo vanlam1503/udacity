@@ -10,6 +10,9 @@ jobs:
       - node/install
       - checkout
       - run:
+          name: Install Yarn
+          command: npm install -g yarn
+      - run:
           name: Front-End Install
           command: |
             npm run frontend:install
